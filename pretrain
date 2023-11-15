@@ -1,0 +1,33 @@
+#!/bin/bash
+
+CUDA_VISIBLE_DEVICES=0 WORLD_SIZE=1 python -m torch.distributed.launch \
+  --nproc_per_node=1 --master_port 47760 experiments/measurement_notes/measurement_notes_pretraining.py \
+  --local-rank=0 \
+  --batch_size 32 \
+  --epochs 100 \
+  --notes_max_seq_len 256 \
+  --measurement_max_seq_len 256 \
+  --weight_decay 0.1 \
+  --mlp 128 \
+  --lr 0.0001 \
+  --warmup_epochs 0 \
+  --temp 0.2 \
+  --measurement_emb_size 128 \
+  --notes_emb_size 128 \
+  --notes_num_heads 8 \
+  --measurement_num_heads 8 \
+  --measurement_num_layers 8 \
+  --notes_num_layers 8 \
+  --measurement_activation GELU \
+  --loss CLIP+MSE \
+  --text_model BERT \
+  --use_measurements \
+  --use_notes \
+  --use_pos_emb \
+  --use_cls_token \
+  --report_freq 10 \
+  --warmup_lr 0.00001 \
+  --measurement_mask_rate 0.1 \
+  --notes_mask_rate 0.1 \
+  --measurement_dropout 0.1 \
+  --notes_dropout 0.1
