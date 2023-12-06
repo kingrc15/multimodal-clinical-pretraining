@@ -6,7 +6,7 @@ This is the official code for "Multimodal Pretraining of Medical Time Series and
 
 ### MIMIC-III
 
-The dataset used for this paper is MIMIC-III. The data can be downloaded here [https://physionet.org/content/mimiciii/1.4/](https://physionet.org/content/mimiciii/1.4/). **NOTE**: To gain access to this dataset, you will need to complete the required training.
+The dataset used for this paper is MIMIC-III. The data can be downloaded here [https://physionet.org/content/mimiciii/1.4/](https://physionet.org/content/mimiciii/1.4/). **NOTE**: To gain access to this dataset, you will need to complete the required training. The paper can be found at the following link: [https://proceedings.mlr.press/v225/king23a.html](https://proceedings.mlr.press/v225/king23a.html)
 
 ### MIMIC-III Benchmark
 
