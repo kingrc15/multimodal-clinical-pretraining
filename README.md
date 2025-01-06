@@ -1,6 +1,6 @@
 # Multimodal Pretraining of Medical Time Series and Notes
 
-This is the official code for "Multimodal Pretraining of Medical Time Series and Notes" at Machine Learning for Health 2023. The paper can be found at the following link: [https://proceedings.mlr.press/v225/king23a.html](https://proceedings.mlr.press/v225/king23a.html)
+This is the official code for "Multimodal Pretraining of Medical Time Series and Notes" at Machine Learning for Health 2023. The paper can be found at the following link: [https://arxiv.org/abs/2312.06855](https://arxiv.org/abs/2312.06855)
 
 ## Data
 
